@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="C:\Users\Irvin\Desktop\viernes\icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="C:\Users\Irvin\Desktop\viernes\icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="C:\Users\Irvin\Desktop\viernes\icons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="C:\Users\Irvin\Desktop\viernes\icons/manifest.json">
+    <link rel="mask-icon" href="C:\Users\Irvin\Desktop\viernes\icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="C:\Users\Irvin\Desktop\viernes\icons/favicon.ico">
+    <link rel="stylesheet" href="css/sss.css">
+    <meta name="msapplication-config" content="C:\Users\Irvin\Desktop\viernes\icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/skin/blue.monday/css/jplayer.blue.monday.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function(){
+    $('#jquery_jplayer_1').jPlayer({
+      ready: function(){
+        $(this).jPlayer("setMedia",{
+          title: "Catch Me-Yellow-Claw",
+          mp3: "canciones/Catch-Me-Yellow-Claw-&-Flux-Pavilion.mp3"
+        });
+      },
+      supplied:"mp3",
+      wmode:"window",
+      useStateClassSkin: true,
+      autoBlur: false,
+      smoothPlayBar:true,
+      keyEnabled:true,
+      remainingDuration:true,
+      toggleDuration:true
+    });
+    });
+    //]]>
+    </script>
+    <div class="slider">
+      <img src="img/img1.png" alt="">
+      <img src="img/img2.jpg" alt="">
+      <img src="img/img3.jpg" alt="">
+      <img src="img/img4.jpg" alt="">
+      <img src="img/img5.jpg" alt="">
+    </div>
+    <!--Reproductor básico jPlayer-->
+
+    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+    <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+    	<div class="jp-type-single">
+    		<div class="jp-gui jp-interface">
+    			<div class="jp-controls">
+    				<button class="jp-play" role="button" tabindex="0">play</button>
+    				<button class="jp-stop" role="button" tabindex="0">stop</button>
+    			</div>
+    			<div class="jp-progress">
+    				<div class="jp-seek-bar">
+    					<div class="jp-play-bar"></div>
+    				</div>
+    			</div>
+    			<div class="jp-volume-controls">
+    				<button class="jp-mute" role="button" tabindex="0">mute</button>
+    				<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+    				<div class="jp-volume-bar">
+    					<div class="jp-volume-bar-value"></div>
+    				</div>
+    			</div>
+    			<div class="jp-time-holder">
+    				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+    				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+    				<div class="jp-toggles">
+    					<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="jp-details">
+    			<div class="jp-title" aria-label="title">&nbsp;</div>
+    		</div>
+    		<div class="jp-no-solution">
+    			<span>Update Required</span>
+    			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+    		</div>
+    	</div>
+    </div>
+
+    <!--Reproductor,lista  reproducción-->
+  </body>
+
+  <script src="js/sss.min.js"></script>
+  <script>
+    jQuery(function($){
+      $('.slider').sss();
+    });
+  </script>
+  <script src="js/jquery.jplayer.min.js">
+
+  </script>
+</html>

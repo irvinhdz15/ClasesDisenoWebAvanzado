@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script type="text/javascript">
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 19.332006, lng: -99.192369},
+    zoom: 16,
+    /*zoomControl: false, Quitar botones de zoom*/
+    /*mapTypeControl:false, quitar botones de relieve y satelite*/
+    /*mapTypeId: google.maps.MapTypeId.SATELITE poner el mapa en satelite*/
+  });
+  map.setTilt(45);/*angulo con el que se ve el mapa*/
+
+  var marcador = new google.maps.Marker({
+    position: {lat: 19.332006, lng: -99.192369},
+    map: map,
+    title: "Estamos aqui"
+  });
+
+  var marcador = new google.maps.Marker({
+    position: {lat: 19.3279807, lng: -99.1838086},
+    map: map,
+    title: "aqui esta mi mejor amigo"
+  });
+
+
+}
+
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?callback=initMap&signed_in=true&key=AIzaSyA8qSo6RDeHpuIHW2znCXIL5NaNxUsjjjs&callback=initMap">
+      /*callback=initMap&signed_in=true& sirve para poner el circulito con tu cuenta en la parte superior derecha*/
+    </script>
+  </body>
+</html>

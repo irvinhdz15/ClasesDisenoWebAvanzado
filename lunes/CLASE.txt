@@ -1,0 +1,16 @@
+document.metodo();
+. sirve para acceder
+
+molde para objetos
+.atributos(variable)
+.metodos(accion)
+
+id sirve como identificador de etiquetas
+instruccion: pseudocodigo
+declaracion: 
+
+variables locales y globales
+
+SEO google: orden que debe llevar una pagina para que aparezca en las primeros resultados de una busqueda
+
+ 

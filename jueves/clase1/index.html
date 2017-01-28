@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <script type="text/javascript" src="js/angular.min.js">
+
+    </script>
+    <title></title>
+  </head>
+  <body ng-controller="movieCtrl as movie">
+
+    <div class="container">
+      <div class="row">
+        <input type="text" ng-model="search">
+      </div>
+
+      <div class="row">
+
+{{"hola mundo"}}
+
+        <div class="col s12 m2" ng-repeat="m in movie.collection | filter : search">
+
+                <div class="col s12 m7">
+
+                    <div class="card">
+
+                              <div class="card-image">
+                                <img src="{{m.img}}">
+                                <span class="card-title">{{m.name}}</span>
+                            </div>
+
+
+                              <div class="card-content">
+                                <p>{{m.year}}<br>
+                                   {{m.category}}
+                                </p>
+                              </div>
+
+                        <div class="card-action">
+                            <a href="#">Ver pelicula</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+  </body>
+  <script type="text/javascript"src="js/main.js"></script>
+
+  <script type="text/javascript"src="js/jquery-3.1.1.min.js"></script>
+
+
+</html>
